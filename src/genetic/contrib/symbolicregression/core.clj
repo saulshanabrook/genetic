@@ -10,7 +10,7 @@
   [source-data]
   (fn [individual]
     (let [error (evolvefn/error individual source-data)]
-      (/ 1.0 error)))))
+      (/ 1.0 error))))
 
  (defn symbolicregression
   [source-data]
