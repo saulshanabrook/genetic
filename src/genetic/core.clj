@@ -18,7 +18,7 @@
                       max-generations Double/POSITIVE_INFINITY
                       max-seconds Double/POSITIVE_INFINITY
                       logging-prefix ""
-                      logging false}}]
+                      logging true}}]
   (assert (not (zero? popsize)))
   (let [start-time (utils/now)
         log (fn [& args] (if logging (apply println logging-prefix args)))]
