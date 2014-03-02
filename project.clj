@@ -9,4 +9,5 @@
   :plugins [[lein-gorilla "0.1.2"]]
   :main ^:skip-aot genetic.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}
+             :dev {:dependencies [[midje "1.5.1"]]}})
