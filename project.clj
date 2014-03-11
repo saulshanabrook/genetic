@@ -1,11 +1,12 @@
-(defproject genetic "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject genetic "0.1.0"
+  :description "Framework for running genetic algorithms"
+  :url "https://github.com/saulshanabrook/genetic"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/math.numeric-tower "0.0.4"]
-                 [roul "0.2.0"]]
+                 [roul "0.2.0"]
+                 [incanter "1.2.2"]]
   :plugins [[lein-gorilla "0.1.2"]]
   :main ^:skip-aot genetic.core
   :target-path "target/%s"
