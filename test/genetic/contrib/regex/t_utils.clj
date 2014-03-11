@@ -33,3 +33,19 @@
   (utils/count-no-match "." ["aa"]) => 1
   (utils/count-no-match "." ["a" "a"]) => 0
   (utils/count-no-match "." ["aa" "aa"]) => 2)
+
+(facts "about `rand-nth-set`"
+  (utils/rand-nth-set #{1}) => 1
+  (utils/rand-nth-set #{"a"}) => "a"
+  (utils/rand-nth-set #{1 2}) => (some-checker 1 2))
+
+(facts "about `all-chars`"
+  (fact "it returns all the characters"
+    (utils/all-chars #{"ab" "cd"}) => (exactly #{\a \b \c \d})
+    (utils/all-chars #{"ab"}) => (exactly #{\a \b})))
+
+(facts "about `maybe-string`"
+  (fact "`maybe-string` returns either the string or a blank"
+    (utils/maybe-string "a") => (some-checker "a" ""))
+  (fact "`maybe-string` returns the right"
+    (utils/maybe-string "a") => (some-checker "a" ""))

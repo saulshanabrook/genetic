@@ -49,7 +49,7 @@
 
 (defn evolve-regex
   [yes no]
-  (let [all-chars  (apply clojure.set/union (map set (concat yes no)))]
+  (let [all-chars (utils/all-chars (concat yes no))]
     (genetic/evolve :new-individual (new-individual all-chars) :mutate (mutate all-chars) :fitness (fitness (set yes) (set no)) :acceptable-fitness 1 :popsize 100)))
 
 (defn -main [input-alias]
