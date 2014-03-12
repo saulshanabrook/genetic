@@ -11,7 +11,7 @@ A Clojure framework for running genetic algorithms.
   simple demonstration project which evolves a vector of 1s and 0s, that has
   a target sum.
 * **[genetic-meta](http://www.github.com/saulshanabrook/genetic-meta)**: a framework
-  on top of `genetic` to use genetic algorithms to optomize the parameters for
+  on top of `genetic` to use genetic algorithms to optimize the parameters for
   other genetic algorithms.
 * **[genetic-regex](http://www.github.com/saulshanabrook/genetic-regex)**: evolve a
   regex which matches all strings in one group and none in another group
