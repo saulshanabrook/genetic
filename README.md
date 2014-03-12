@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/saulshanabrook/genetic.png)](https://travis-ci.org/saulshanabrook/genetic)
+
 # `genetic`
 
 A Clojure framework for running genetic algorithms.
